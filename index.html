@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>俄罗斯方块</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<section id='stage'>
+		<button>点击停止</button>
+		<div id='local_area'>
+			<h3>我的游戏区域</h3>
+			<section class='notification'></section>
+			<div class='game_area stage-left'></div>
+			<div class='stage-right'>
+				<div class='next_area'></div>
+				<div class='score_area'>
+					<p>
+						用时：
+						<span class='game_timer'>0</span> 秒
+					</p>
+					<p>
+						得分：
+						<span class='game_score'>0</span> 分
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id='remote_area'>
+			<h3>对方的游戏区域</h3>
+			<section class='notification'></section>
+			<div class='stage-left game_area'></div>
+			<div class='stage-right'>
+				<div class='next_area'></div>
+				<div class='score_area'>
+					<p>
+						用时：
+						<span class='game_timer'>0</span> 秒
+					</p>
+					<p>
+						得分：
+						<span class='game_score'>0</span> 分
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="./prd/bundle.js"></script>
+</html>

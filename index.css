@@ -1,0 +1,52 @@
+#stage{
+	margin: 0 auto;
+	overflow: hidden;
+}
+.stage-left{
+	float: left;
+	width: 200px;
+	height: 400px;
+	background-color:#bfedf3; 
+	border:1px solid #7ac5be;
+	border-top: 0px;
+	position: relative;
+}
+.stage-right{
+	float: left;
+	margin-left: 20px;
+}
+.next_area{
+	width: 80px;
+	height: 80px;
+	background-color:#bfedf3; 
+	border:1px solid #7ac5be;
+	position: relative;
+}
+.none, .run, .done, .conflict {
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	border: 1px solid #afb38b;
+	position: absolute;
+}
+.none{
+	background-color: transparent;
+}
+.run{
+	background-color: #FFC107;
+}
+.done{
+	background-color: #4CAF50;
+}
+.conflict{
+	background-color: #cc4a4a;
+}
+#local_area{
+	float: left;
+	margin-left:100px;
+}
+
+#remote_area {
+	float: right;
+	margin-right: 100px;
+}
