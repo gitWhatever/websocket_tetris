@@ -126,7 +126,7 @@ function init(sc) {
 	});
 
 	socket.on('lost', function () {
-		$notification.innerHTML = '对方用户掉线';
+		$notification.innerHTML = '对方用户掉线了';
 		stop();
 	});
 
